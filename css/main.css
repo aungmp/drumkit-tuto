@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+@import url('https://cdn.jsdelivr.net/gh/vaibhav111tandon/vov.css@latest/vov.css" rel="stylesheet" type="text/css"');
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+body {
+  background-color: blueviolet;
+}
+body h1 {
+  color: white;
+  font-size: 9rem;
+  font-family: "Nova Square", sans-serif;
+  text-shadow: 4px 0 red;
+  text-align: center;
+  margin: 3rem auto;
+  font-weight: 600;
+}
+body h1 img {
+  width: 8rem;
+}
+body .drum-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+body .drum-box .drum {
+  min-width: 140px;
+  min-height: 140px;
+  border: solid 10px gray;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: auto 30px;
+  color: red;
+  font-size: 4rem;
+  font-family: "Nova Square", sans-serif;
+}
+body .drum-box .color {
+  display: inline-block;
+  margin: 0 0.2rem;
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 400ms; /* don't forget to set a duration! */
+}
+body .drum-box .w {
+  background-image: url("/images/tom1.png");
+}
+body .drum-box .a {
+  background-image: url("/images/tom2.png");
+}
+body .drum-box .s {
+  background-image: url("/images/tom3.png");
+}
+body .drum-box .d {
+  background-image: url("/images/tom4.png");
+}
+body .drum-box .j {
+  background-image: url("/images/snare.png");
+}
+body .drum-box .k {
+  background-image: url("/images/crash.png");
+}
+body .drum-box .l {
+  background-image: url("/images/kick.png");
+}
+body footer {
+  text-align: center;
+  margin-top: 5%;
+  padding: 1%;
+  font-family: "Nova Square", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+}
+@media screen and (max-width: 900px) {
+  body h1 {
+    font-size: 7rem;
+    margin: 2rem auto;
+  }
+  body h1 img {
+    width: 6rem;
+  }
+  body .drum-box {
+    margin-top: 4rem;
+    padding: 2rem;
+  }
+  body .drum-box .drum {
+    min-width: 150px;
+    min-height: 150px;
+    font-size: 3rem;
+    margin: 1rem auto;
+  }
+  body footer {
+    text-align: center;
+    padding: 1%;
+    font-family: "Nova Square", sans-serif;
+    font-size: 1rem;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 735px) {
+  body h1 {
+    font-size: 5rem;
+    margin: 1.5rem auto;
+  }
+  body h1 img {
+    width: 5rem;
+  }
+  body .drum-box {
+    margin-top: 3rem;
+    min-height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body .drum-box .drum {
+    margin: 0 1rem;
+    font-size: 2.5rem;
+    min-width: 120px;
+    min-height: 120px;
+  }
+  body footer {
+    text-align: center;
+    padding: 1%;
+    font-family: "Nova Square", sans-serif;
+    font-size: 1rem;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 638px) {
+  body h1 {
+    font-size: 4rem;
+    margin: 1.2rem auto;
+  }
+  body h1 img {
+    width: 4rem;
+  }
+  body .drum-box {
+    margin-top: 3rem;
+    display: flex;
+    gap: 10px;
+    justify-items: center;
+  }
+  body .drum-box .drum {
+    margin: 0 1rem;
+    font-size: 2rem;
+    min-width: 130px;
+    min-height: 130px;
+  }
+  body footer {
+    text-align: center;
+    padding: 1%;
+    font-family: "Nova Square", sans-serif;
+    font-size: 1rem;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 400px) {
+  body h1 {
+    font-size: 3rem;
+    margin: 1rem auto;
+  }
+  body h1 img {
+    width: 2.5rem;
+  }
+  body .drum-box {
+    margin: auto 1rem;
+    display: flex;
+    justify-items: center;
+  }
+  body .drum-box .drum {
+    font-size: 2rem;
+    min-width: 100px;
+    min-height: 100px;
+  }
+  body footer {
+    text-align: center;
+    padding: 10px;
+    font-family: "Nova Square", sans-serif;
+    font-size: 1rem;
+    color: #fff;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
