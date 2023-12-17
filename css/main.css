@@ -89,25 +89,25 @@ body .drum-box .color {
   animation-duration: 400ms; /* don't forget to set a duration! */
 }
 body .drum-box .w {
-  background-image: url("/images/tom1.png");
+  background-image: url("../images/tom1.png");
 }
 body .drum-box .a {
-  background-image: url("/images/tom2.png");
+  background-image: url("../images/tom2.png");
 }
 body .drum-box .s {
-  background-image: url("/images/tom3.png");
+  background-image: url("../images/tom3.png");
 }
 body .drum-box .d {
-  background-image: url("/images/tom4.png");
+  background-image: url("../images/tom4.png");
 }
 body .drum-box .j {
-  background-image: url("/images/snare.png");
+  background-image: url("../images/snare.png");
 }
 body .drum-box .k {
-  background-image: url("/images/crash.png");
+  background-image: url("../images/crash.png");
 }
 body .drum-box .l {
-  background-image: url("/images/kick.png");
+  background-image: url("../images/kick.png");
 }
 body footer {
   text-align: center;
