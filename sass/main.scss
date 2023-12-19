@@ -37,15 +37,14 @@ body {
       color: red;
       font-size: 4rem;
       font-family: "Nova Square", sans-serif;
-      
+      transition: transform 0.1s ease;
+       
     }
-    .color{
-      display: inline-block;
-      margin: 0 0.2rem;
-    
-      animation: bounce; /* referring directly to the animation's @keyframe declaration */
-      animation-duration: 400ms; /* don't forget to set a duration! */
+    .drum:active  {
+     transform: translateY(10px)
     }
+ 
+  }
 
     .w {
       background-image: url("../images/tom1.png");
@@ -190,4 +189,4 @@ body {
       color: #fff;
     }
   }
-}
+ 

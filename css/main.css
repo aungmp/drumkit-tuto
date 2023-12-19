@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
 @import url('https://cdn.jsdelivr.net/gh/vaibhav111tandon/vov.css@latest/vov.css" rel="stylesheet" type="text/css"');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -81,35 +82,34 @@ body .drum-box .drum {
   color: red;
   font-size: 4rem;
   font-family: "Nova Square", sans-serif;
+  transition: transform 0.1s ease;
 }
-body .drum-box .color {
-  display: inline-block;
-  margin: 0 0.2rem;
-  animation: bounce; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 400ms; /* don't forget to set a duration! */
+body .drum-box .drum:active {
+  transform: translateY(10px);
 }
-body .drum-box .w {
+body .w {
   background-image: url("../images/tom1.png");
 }
-body .drum-box .a {
+body .a {
   background-image: url("../images/tom2.png");
 }
-body .drum-box .s {
+body .s {
   background-image: url("../images/tom3.png");
 }
-body .drum-box .d {
+body .d {
   background-image: url("../images/tom4.png");
 }
-body .drum-box .j {
+body .j {
   background-image: url("../images/snare.png");
 }
-body .drum-box .k {
+body .k {
   background-image: url("../images/crash.png");
 }
-body .drum-box .l {
+body .l {
   background-image: url("../images/kick.png");
 }
-body footer {
+
+footer {
   text-align: center;
   margin-top: 5%;
   padding: 1%;
@@ -117,25 +117,26 @@ body footer {
   font-size: 1rem;
   color: #fff;
 }
+
 @media screen and (max-width: 900px) {
-  body h1 {
+  h1 {
     font-size: 7rem;
     margin: 2rem auto;
   }
-  body h1 img {
+  h1 img {
     width: 6rem;
   }
-  body .drum-box {
+  .drum-box {
     margin-top: 4rem;
     padding: 2rem;
   }
-  body .drum-box .drum {
+  .drum-box .drum {
     min-width: 150px;
     min-height: 150px;
     font-size: 3rem;
     margin: 1rem auto;
   }
-  body footer {
+  footer {
     text-align: center;
     padding: 1%;
     font-family: "Nova Square", sans-serif;
@@ -144,26 +145,26 @@ body footer {
   }
 }
 @media screen and (max-width: 735px) {
-  body h1 {
+  h1 {
     font-size: 5rem;
     margin: 1.5rem auto;
   }
-  body h1 img {
+  h1 img {
     width: 5rem;
   }
-  body .drum-box {
+  .drum-box {
     margin-top: 3rem;
     min-height: 50vh;
     display: flex;
     flex-wrap: wrap;
   }
-  body .drum-box .drum {
+  .drum-box .drum {
     margin: 0 1rem;
     font-size: 2.5rem;
     min-width: 120px;
     min-height: 120px;
   }
-  body footer {
+  footer {
     text-align: center;
     padding: 1%;
     font-family: "Nova Square", sans-serif;
@@ -172,26 +173,26 @@ body footer {
   }
 }
 @media screen and (max-width: 638px) {
-  body h1 {
+  h1 {
     font-size: 4rem;
     margin: 1.2rem auto;
   }
-  body h1 img {
+  h1 img {
     width: 4rem;
   }
-  body .drum-box {
+  .drum-box {
     margin-top: 3rem;
     display: flex;
     gap: 10px;
     justify-items: center;
   }
-  body .drum-box .drum {
+  .drum-box .drum {
     margin: 0 1rem;
     font-size: 2rem;
     min-width: 130px;
     min-height: 130px;
   }
-  body footer {
+  footer {
     text-align: center;
     padding: 1%;
     font-family: "Nova Square", sans-serif;
@@ -200,24 +201,24 @@ body footer {
   }
 }
 @media screen and (max-width: 400px) {
-  body h1 {
+  h1 {
     font-size: 3rem;
     margin: 1rem auto;
   }
-  body h1 img {
+  h1 img {
     width: 2.5rem;
   }
-  body .drum-box {
+  .drum-box {
     margin: auto 1rem;
     display: flex;
     justify-items: center;
   }
-  body .drum-box .drum {
+  .drum-box .drum {
     font-size: 2rem;
     min-width: 100px;
     min-height: 100px;
   }
-  body footer {
+  footer {
     text-align: center;
     padding: 10px;
     font-family: "Nova Square", sans-serif;

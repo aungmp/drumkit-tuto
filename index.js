@@ -1,13 +1,11 @@
 var drums = document.querySelectorAll(".drum");
+var drumbox=document.querySelector(".drum-box");
 
 
  
 for (var i = 0; i < drums.length; i++) {
    drums[i].addEventListener("click", function(){
-      this.classList.add('color');
        var dr = this.innerText;
-
-      
       switch (dr) {
          case "w":
             
